@@ -1,7 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"github.com/Go-Dev-and-Chill/chat-app-server/routes"
+)
 
 func main() {
-	fmt.Println("Hello, World!")
+	routes.HandleFunc()
 }
