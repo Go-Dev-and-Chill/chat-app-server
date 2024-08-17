@@ -24,6 +24,6 @@ func HandleFunc() {
 	r.GET("/", controllers.HelloWorld)
 	r.NoRoute(controllers.NotFound)
 
-	http.ListenAndServe(viper.GetString("SERVER_ADRESS")+":"+viper.GetString("PORT"), r)
+	http.ListenAndServe(viper.GetString("SERVER_ADRESS") + ":" + viper.GetString("PORT"), r)
 
 }
